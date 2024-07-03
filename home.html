@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halo Word</title>
+<style>
+        body {
+            background-color: black;
+            color: white; /* Esto hará que el texto sea visible sobre el fondo negro */
+            margin: 0;
+            padding: 0;
+        }
+	.img-logo{
+	padding-top:60px;
+	z-index:1;
+	}
+	header{
+	position:fixed;
+	width:94%;
+	background-color:black;
+	}
+        header, nav, article {
+            border: 5px solid green;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        header h1, nav ul, article header {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .container {
+            border: 5px solid green;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .Comprar {
+            background-color: green;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .Comprar:hover {
+            background-color: darkgreen;
+        }
+    </style>
+<style>
+        /* Estilos para el fondo oscuro */
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+        }
+        /* Estilos para el formulario */
+        .login-popup {
+            display: none;
+            position: fixed;
+            background-color: white;
+            width: 300px;
+            padding: 20px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1001;
+        }
+    </style>
+
+<body>
+
+<!-- Overlay de fondo oscuro -->
+<div id="overlay" class="overlay"></div>
+
+<!-- Ventana emergente de inicio de sesión -->
+<div id="loginPopup" class="login-popup">
+    <h2>Iniciar Sesión</h2>
+    <form>
+        <label for="username">Usuario:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="password">Contraseña:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+        <button type="button" onclick="login()">Iniciar Sesión</button>
+    </form>
+</div>
+
+<script>
+    // Mostrar ventana emergente al cargar la página
+    window.onload = function() {
+        document.getElementById('overlay').style.display = 'block';
+        document.getElementById('loginPopup').style.display = 'block';
+    }
+
+    // Función para iniciar sesión (aquí deberías incluir tu lógica de autenticación)
+    function login() {
+        var username = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
+        // Aquí deberías validar las credenciales y redirigir si son correctas
+        alert('Usuario: ' + username + ', Contraseña: ' + password);
+        // Por ahora solo cierro la ventana emergente
+        closePopup();
+    }
+
+    // Función para cerrar la ventana emergente
+    function closePopup() {
+        document.getElementById('overlay').style.display = 'none';
+        document.getElementById('loginPopup').style.display = 'none';
+    }
+</script>
+
+
+
+
+    <link rel="stylesheet" href="styles.css"> <!-- Enlaza tu archivo CSS para estilos -->
+<style>
+        /* Estilos del slider */
+        .slider {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .slide {
+            width: 100%;
+        }
+    </style>
+
+<script>
+        function comprarProducto(url) {
+            window.location.href = url; // Redirige a la URL especificada
+        }
+function comprarProducto(url) {
+            window.location.href = url; 
+        }
+function comprarProducto(url) {
+            window.location.href = url; 
+        }
+function comprarProducto(url) {
+            window.location.href = url; 
+        }
+function comprarProducto(url) {
+            window.location.href = url; 
+        }
+function comprarProducto(url) {
+            window.location.href = url; 
+        }
+function comprarProducto(url) {
+            window.location.href = url; 
+        }
+function comprarProducto(url) {
+            window.location.href = url; 
+        }
+function comprarProducto(url) {
+            window.location.href = url; 
+        }
+function comprarProducto(url) {
+            window.location.href = url; 
+        }
+    </script>
+
+</head>
+
+
+    <header >
+<h1>
+Halo word
+</h1>
+ <nav>
+ <ul> 
+<li><a href="productos.HTML">Productos</a>
+</li> <li><a href="quienes somos.HTML">quienes somos</a></li> 
+<li><a href="carrito de compras.HTML">Carrito de compras</a></li> 
+<li><a href="contactanos.HTML">contactanos</a></li> 
+</ul> 
+</nav> 
+</header> 
+
+	          
+
+    </header>
+
+ <div style="display:flex;align-items;center;justify-content:center;padding:20px;">
+        <img src="C:\Users\Tenem\OneDrive\Documentos\Tienda Halo\logoHalo.jpg" width="260" height="250" class"img-logo"/>
+    </div>
+
+<main>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                   <a href="producto1.HTML">                                                                                                                                                          
+                    <img src="C:\Users\Tenem\OneDrive\Documentos\Tienda Halo\producto1.jpg"width="210" height="210" alt="producto1.">
+                    </a>
+<h2>Original Green Halo</h2>
+<p>Es una consola potente para poder cargar videojuegos, Halo es un titulo principal para esta consola.</p>
+<p>Precio en promoción: $5589.00MXN</p>
+                </div>
+                <div class="slide">
+                <a href="producto%2.HTML">
+                    <img src="C:\Users\Tenem\OneDrive\Documentos\Tienda Halo\producto2%.jpg" width="260" height="250" alt="Producto 2">
+                    </a>
+<h2>Libro de Halo circulo Roto:</h2>
+<p>Este libro le ofrece al consumidor una lectura de la historia que sucede, la historia dejará atónitos a los lectores, aparte de que sus materiales son de excelente calidad.</p>
+<p>Precio en promoción: $1140.00 MXN</p>
+                </div>
+                <div class="slide">
+                <a href="producto%3.HTML">
+                    <img src="C:\Users\Tenem\OneDrive\Documentos\Tienda Halo\producto3%.jpg" width="260" height="250" alt="Producto 3">
+                    </a>
+<h2>Libro de Halo Renegados</h2>
+<p>Este libro le ofrece al consumidor una lectura de la historia que sucedió, la historia dejará atónitos a los lectores, aparte de que sus materiales son de excelente calidad.</p>
+<p>Precio en promoción: $2,999.97 MXN</p></p>
+                </div>
+                <div class="slide">
+                <a href="producto%4.HTML">
+                    <img src="C:\Users\Tenem\OneDrive\Documentos\Tienda Halo\producto4%.jpg" width="260" height="250" alt="Producto 4">
+                  </a> 
+<h2>Libro de Halo Hunter in the Dark</h2>
+<p>Este libro le ofrece al consumidor una lectura de la historia que sucede, la historia dejará atónitos a los lectores, aparte de que sus materiales son de excelente calidad.</p>
+<p>Precio en promoción: $4,499.99 MXN</p>
+                </div>
+                <div class="slide">
+                <a href="producto%5.HTML">
+                    <img src="C:\Users\Tenem\OneDrive\Documentos\Tienda Halo\producto5%.jpg" width="260" height="250" alt="Producto 5">
+                 </a>   
+<h2>Libro de Halo el Protocolo Cole</h2>
+<p>Este libro le ofrece al consumidor una lectura de la historia que sucedió, la historia dejará atónitos a los lectores, aparte de que sus materiales son de excelente calidad.</p>
+<p>Precio en promoción: $1,999.99 MXN</p>
+                </div>
+                <!-- Agrega más productos con imágenes según sea necesario -->
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <main>
+        <section class="productos">
+            <article class="producto">
+<img src="C:\Users\Tenem\OneDrive\Documentos\Tienda Halo\producto1.jpg" alt="Producto 1">
+                <h2>original green Halo</h2>
+                <p>consola demasiada eficiente y eficaz, capaz de reproducir Halo, tiene cupo para que 4 jugadores puedan jugar al mismo tiempo.</p>
+                <p>Precio: $20,574.48 MXN</p>
+  <button class="Comprar" onclick="comprarProducto('PRODUCTO1.HTML')">Comprar</button>
+            </article>
+            <article class="producto">
+<img src="C:\Users\Tenem\OneDrive\Documentos\Tienda Halo\producto2.jpg" alt="Producto 2">
+                <h2>Xbxo 360 version Halo Transparente</h2>
+                <p>es una consola mas actualizada, es mejor en rendimiento, jugabilidad y potencia, esta consola a peticion de los consumidores se le incorporo luz led a los controles y a la consola.</p>
+                <p>Precio: $30,867.72 MXN</p>
+  <button class="Comprar" onclick="comprarProducto('PRODUCTO2.HTML')">Comprar</button>
+            </article>
+            <article class="producto">
+<img src="C:\Users\Tenem\OneDrive\Documentos\Tienda Halo\producto3.jpg" alt="Producto 3">
+                <h2>Xbox One Fat Masterchef</h2>
+                <p>Esta consdola vino a revolucionar el mundo de los videojuegos a la fecha que salio la consola, esta consola de edicion especial de halo vino con la colecccion de halo.</p>
+                <p>Precio: $6,173.71 MXN</p>
+  <button class="Comprar" onclick="comprarProducto('PRODUCTO3.HTML')">Comprar</button>
+            </article>
+            <article class="producto">
+<img src="C:\Users\Tenem\OneDrive\Documentos\Tienda Halo\producto4.jpg" alt="Producto 4">
+                <h2>Xbox series x Master</h2>
+                <p>Esta consola esta revolucionando los videojuegos en la actualidad, tiene una potencia y resistencia impresionantes, aparte de que viene con el halo mas reciente viene con toda la disponibilidad para descargar toda la saga del titulo.</p>
+                <p>Precio:   $10,287.82 MXN</p>
+  <button class="Comprar" onclick="comprarProducto('PRODUCTO4.HTML')">Comprar</button>
+            </article>
+            <article class="producto">
+<img src="C:\Users\Tenem\OneDrive\Documentos\Tienda Halo\producto5.jpg" alt="Producto 5">
+                <h2>Control elite de Coleccion Halo</h2>
+                <p>El control se siente súper premium, los materiales son muy buenos y los colores elegantes, tiene grips de agarre con los que puedes sujetar bastante bien el control, sobretodo para aquellos con manos sudorosas lo van a agradecer. Los gatillos traseros son de metal y los gatillos RB,LB tienen apariencia metálica.</p>
+                <p>Precio: $4,115.13 MXN</p>
+  <button class="Comprar" onclick="comprarProducto('PRODUCTO5.HTML')">Comprar</button>
+            </article>
+            <article class="producto">
+<img src="C:\Users\Tenem\OneDrive\Documentos\Tienda Halo\producto6.jpg" alt="Producto 6">
+                <h2>Set gamer de Audifonos, mause y teclado edicion halo de la marca Halo<</h2>
+                <p>Un teclado con retroiluminación personalizable. El Teclado Mecánico ofrece una experiencia cómoda y precisa, con interruptores mecánicos que proporcionan una respuesta táctil satisfactoria.Los audigonos de la marca razer son de muy buena calidad, los agudos y los graves son perfectos, el acolchonado es agradable.El mause es de mucho agrado y su eficiencia en los videojuegos es de muy alta calidad, los dpi son perfectos.</p>
+                <p>Precio: $2,674.69 MXN</p>
+  <button class="Comprar" onclick="comprarProducto('PRODUCTO6.HTML')">Comprar</button>
+            </article>
+            <article class="producto">
+<img src="C:\Users\Tenem\OneDrive\Documentos\Tienda Halo\producto7.jpg" alt="Producto 7">
+                <h2>figura de coleccion Masterchef</h2>
+                <p>una figura de coleecion del jefe maestro al lado de uno de sus tantos rivales.</p>
+                <p>Precio: $1,644.89 MXN</p>
+  <button class="Comprar" onclick="comprarProducto('PRODUCTO7.HTML')">Comprar</button>
+            </article>
+            <article class="producto">
+<img src="C:\Users\Tenem\OneDrive\Documentos\Tienda Halo\producto8.jpg" alt="Producto 8">
+                <h2>Replica de Rifle de Asalto</h2>
+                <p>Auriculares inalámbricos con calidad de audio excepcional. Los Auriculares Bluetooth HD ofrecen un sonido nítido y envolvente, con tecnología de cancelación de ruido para una experiencia auditiva inmersiva. Con su diseño ligero y cómodo, son ideales para escuchar música, ver películas o hacer llamadas en movimiento.</p>
+                <p>Precio: $3,081.41 MXN</p>
+                <button class="Comprar" onclick="comprarProducto('PRODUCTO8.HTML')">Comprar</button>
+            </article>
+            <article class="producto">
+<img src="C:\Users\Tenem\OneDrive\Documentos\Tienda Halo\producto9.jpg" alt="Producto 9">
+                <h2>Espada de energia</h2>
+                <p>Esta cadenita de la espada de energia representa ue tan fanatico eres de lar armas de los covenants en Halo.</p>
+                <p>Precio: $1,644.89 MXN</p>
+                <button class="Comprar" onclick="comprarProducto('PRODUCTO9.HTML')">Comprar</button>
+            </article>
+            <article class="producto">
+<img src="C:\Users\Tenem\OneDrive\Documentos\Tienda Halo\producto10.jpg" alt="Producto 10">
+                <h2>Cadena de aguijionador</h2>
+                <p>Esta cadenita de aguijionador de halo solo desmuestra a los consumidores que tan fan de halo son, esta cadenita demuestra cual es el amor que tu tienes hacia las armas explosivas de Halo.</p>
+                <p>Precio: $2,058.97 MXN</p>
+                <button class="Comprar" onclick="comprarProducto('PRODUCTO10.HTML')">Comprar</button>
+            </article>
+        </section>
+    </main>
+
+<footer>
+        <p>&copy; 2024 Tienda de Halo</p>
+    </footer>
+
+    <script>
+        // Función para cambiar el slide cada 5 segundos
+        setInterval(function() {
+            const slides = document.querySelector('.slides');
+            const firstSlide = slides.firstElementChild;
+            slides.appendChild(firstSlide);
+        }, 5000);
+    </script>
+
+</body>
+</html>
